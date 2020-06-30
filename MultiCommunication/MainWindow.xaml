@@ -160,7 +160,7 @@
 							<ColumnDefinition Width="140"/>
 						</Grid.ColumnDefinitions>
 						<ScrollViewer Grid.Column="0">
-							<WrapPanel IsEnabled="False">
+							<WrapPanel IsEnabled="False" Name="WrpReceived">
 								<Label Content="1" Width="30" VerticalAlignment="Center"/>
 								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
 								<TextBox  Width="80" Margin="3" TabIndex="0"/>

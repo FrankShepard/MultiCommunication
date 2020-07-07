@@ -20,6 +20,8 @@
 						<ComboBox Name="cobSerialport" Width="100" PreviewMouseDown="CobSerialport_PreviewMouseDown" SelectionChanged="CobSerialport_SelectionChanged"/>
 						<Label Content="	串口波特率" />
 						<ComboBox Name="cobBaudrate" Width="80" PreviewMouseDown="CobBaudrate_PreviewMouseDown" SelectionChanged="CobBaudrate_SelectionChanged" />
+						<CheckBox Content="发送端使用 Modbus-CRC16 " Margin="7" Name="chkUseModbusCRC16"/>
+						<CheckBox Content="低位在前 " Margin="7" Name="chkLowByteFirst"/>
 					</WrapPanel>
 				</WrapPanel>
 			</Grid>
@@ -162,112 +164,112 @@
 						<ScrollViewer Grid.Column="0">
 							<WrapPanel IsEnabled="False" Name="WrpReceived">
 								<Label Content="1" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="0"/>
 								<Label Content="2" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"  Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="1"/>
 								<Label Content="3" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"  Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="2"/>
 								<Label Content="4" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="3"/>
 								<Label Content="5" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="4"/>
 								<Label Content="6" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="5"/>
 								<Label Content="7" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"  Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="6"/>
 								<Label Content="8" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="7"/>
 								<Label Content="9" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="8"/>
 								<Label Content="10" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="9"/>
 								<Label Content="11" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="10"/>
 								<Label Content="12" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="11"/>
 								<Label Content="13" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="12"/>
 								<Label Content="14" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="13"/>
 								<Label Content="15" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="14"/>
 								<Label Content="16" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="15"/>
 								<Label Content="17" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="16"/>
 								<Label Content="18" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="17"/>
 								<Label Content="19" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="18"/>
 								<Label Content="20" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="19"/>
 								<Label Content="21" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="20"/>
 								<Label Content="22" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="21"/>
 								<Label Content="23" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="22"/>
 								<Label Content="24" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="23"/>
 								<Label Content="25" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="24"/>
 								<Label Content="26" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="25"/>
 								<Label Content="27" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="26"/>
 								<Label Content="28" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="27"/>
 								<Label Content="29" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="28"/>
 								<Label Content="30" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="29"/>
 								<Label Content="31" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="30"/>
 								<Label Content="32" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="31"/>
 								<Label Content="33" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="32"/>
 								<Label Content="34" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="33"/>
 								<Label Content="35" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="34"/>
 								<Label Content="36" Width="30" VerticalAlignment="Center"/>
-								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown"/>
+								<CheckBox Content="地址字节" Width="80" VerticalAlignment="Center" IsTabStop="True" KeyDown="CheckBox_KeyDown" Visibility="Hidden"/>
 								<TextBox  Width="80" Margin="3" TabIndex="35"/>
 							</WrapPanel>
 						</ScrollViewer>
